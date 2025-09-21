@@ -28,7 +28,7 @@ class LoginScreen extends StatelessWidget {
                   width: isTablet ? 600 : (isPortrait ? screenWidth * 0.9 : screenWidth * 0.65),
                   padding: EdgeInsets.all(16),
                   height: screenHeight,
-                  child: Column(),
+                  child: isPortrait ? const LoginPortrait() : const LoginLandscape(),
                 );
               }),
             );
